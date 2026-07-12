@@ -1,0 +1,30 @@
+ARDUINO - CLASE N°1 
+
+Arduino se divide en dos conceptos principales: el hardware y el software. El hardware está conformado por sus placas electrónicas, entre las que se encuentran distintos modelos como Arduino UNO, Arduino Mega, Arduino Nano, entre otros. A continuación, explicaré la composición de la placa más conocida: el Arduino UNO.
+
+El Arduino UNO está conformado por:
+
+- Microcontrolador ATmega328P: el “cerebro” de la placa, encargado de ejecutar los programas.
+- Pines digitales (14 en total): se usan como entradas o salidas para conectar sensores, actuadores o módulos.
+- Entradas analógicas (6 pines): permiten leer valores analógicos, por ejemplo de potenciómetros o sensores de luz.
+- Conector USB: se utiliza para cargar programas desde la computadora y para comunicación serie.
+- Regulador de voltaje: asegura que los componentes reciban el voltaje adecuado.
+- Pines de alimentación: incluyen 5V, 3.3V, GND y VIN para alimentar la placa o dispositivos externos.
+- Oscilador de cuarzo (16 MHz): proporciona la frecuencia de reloj necesaria para el funcionamiento del microcontrolador.
+- Botón de reinicio (RESET): reinicia el programa cargado en el microcontrolador.
+- Conector de alimentación externa: permite alimentar la placa con una fuente externa (7 a 12V típicamente).
+
+La estructura básica del lenguaje de programación en Arduino es bastante simple y se compone de dos partes principales; la función void setup() y la función loop().
+
+|| void setup(): se ejecuta una sola vez al iniciar el programa. Su función es inicializar los pines (definiéndolos como entradas o salidas), configurar la comunicación serie y preparar los componentes que se usarán. Aunque no contenga instrucciones, esta función debe estar siempre presente en el programa.
+
+En Arduino, los pines digitales pueden comportarse de dos maneras: 
+
+- Como entrada (INPUT) → El pin recibe información del exterior. Ejemplo: un botón, un sensor de luz, un sensor de temperatura.El pin “escucha” si llega una señal de alto (HIGH, 5V) o bajo (LOW, 0V).
+
+- Como salida (OUTPUT) → El pin envía información o energía hacia otro componente.Ejemplo: encender un LED, activar un motor, enviar una señal a otro circuito. El pin puede mandar un valor HIGH (5V) o LOW (0V).
+
+|| loop(): se ejecuta de forma continua después de setup(). Aquí se escriben las instrucciones que el Arduino repetirá indefinidamente mientras esté encendido.
+
+
+
